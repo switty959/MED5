@@ -1,9 +1,9 @@
-﻿Shader "CGP/flat"
+﻿Shader "Tutorial/flat"
 {
 	Properties
 	{
 		_color("Color",color) = (1,1,1,1)
-			}
+	}
 
 			SubShader
 			{
