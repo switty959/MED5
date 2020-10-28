@@ -24,12 +24,14 @@
 			struct v2f
 			{
 				float4 pos : SV_POSITION;
+				fixed4 color : COLOR;
 			};
 
 			v2f vert(appdata_base v)
 			{
 				v2f output;
-
+				output.color.r = 1 * abs(_SinTime.w);
+				output.color.b = 1 * abs(_CosTime.w);
 				output.pos = UnityObjectToClipPos(v.vertex);
 
 				return output;
@@ -39,7 +41,7 @@
 			{
 				
 
-				return _firstColor;
+				return input.color;
 			}
 
 	ENDCG
