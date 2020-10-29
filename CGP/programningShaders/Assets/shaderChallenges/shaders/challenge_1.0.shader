@@ -13,6 +13,7 @@
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #pragma target 3.5
             #include "UnityCG.cginc"
 
             float4 _firstColor;
@@ -20,26 +21,40 @@
             float4 _thirdColor;
 
         // vertex input: position, color
-        struct appdata {
-            float4 vertex : POSITION;
-            fixed4 color : COLOR;
-        };
-
         struct v2f {
+            fixed4 color : TEXCOORD0;
             float4 pos : SV_POSITION;
-            fixed4 color : COLOR;
         };
         
-        v2f vert (appdata v) {
+        v2f vert 
+            (
+                float4 vertex : POSITION,
+                uint vid : SV_VertexID
+            ) 
+            {
             v2f o;
-            o.pos = UnityObjectToClipPos(v.vertex );
-            o.color.z = o.pos +_firstColor;
+            o.pos = UnityObjectToClipPos(vertex);
+            float f = (float)vid;
+            if (f ==2 || f ==3)
+            {
+                o.color = _firstColor;
+            }
+            if (f == 1)
+            {
+                o.color = _secondColor;
+            }
+            if (f == 0 )
+            {
+                o.color = _thirdColor;
+            }
+            
+                
             return o;
-        }
+
+            }
         
         fixed4 frag(v2f i) : SV_Target
         {
-            i.pos.x = i.pos.x + 50;
             return i.color; 
         }
         ENDCG

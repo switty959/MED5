@@ -64,8 +64,8 @@
 					//IN.uv.x += _SinTime.w;
 					//IN.uv.y += _CosTime.w;
 
-					IN.uv.x = IN.uv.x*4;
-					IN.uv.y = IN.uv.y*4 + _Time.y;
+					IN.uv.x = IN.uv.x*4 + _Time.y;
+					IN.uv.y = IN.uv.y*4 ;
 
 					fixed pixelColor = tex2D(_MainTexture, IN.uv);
 
