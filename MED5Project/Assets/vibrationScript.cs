@@ -8,7 +8,7 @@ public class vibrationScript : MonoBehaviour
 {
     public Vector3 startPos;
     public Quaternion startRotation;
-    public AudioSource vibrationSound;
+    public AudioClip vibrationSound;    
     public float speed, strength,intensity;
     public int timer;
     public bool vibrate;
@@ -18,6 +18,7 @@ public class vibrationScript : MonoBehaviour
     {
         startPos = transform.position;
         startRotation = transform.rotation;
+        
     }
 
     // Update is called once per frame
@@ -26,12 +27,19 @@ public class vibrationScript : MonoBehaviour
         if (vibrate)
         {
             StartCoroutine(vibration());
+            
+
         }
         
     }
 
     IEnumerator vibration()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = vibrationSound;
+        yield return new WaitForSeconds(audio.clip.length);
+        
+        audio.Play();
         transform.rotation = new Quaternion(
             startRotation.x + Random.Range(-intensity, intensity) * intensity,
             startRotation.y + Random.Range(-intensity, intensity) * intensity,
@@ -42,7 +50,8 @@ public class vibrationScript : MonoBehaviour
         float z = Random.Range(startPos.z, startPos.z * Mathf.Sin(Random.Range(0, 1) * speed) * strength);
 
         transform.position = new Vector3(x, startPos.y, z);
-        vibrationSound.Play();
+
+
         
         yield return new WaitForSeconds(timer);
         vibrate = false;

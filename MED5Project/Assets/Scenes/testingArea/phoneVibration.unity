@@ -390,7 +390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPos: {x: 0, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
-  vibrationSound: {fileID: 1760043463}
+  vibrationSound: {fileID: 8300000, guid: 79a2528eb0e85bf4cad5e29b33edbf3f, type: 3}
   speed: 1
   strength: 1
   intensity: 0.001
@@ -466,7 +466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760043457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.036, y: 1.072, z: 0.013}
+  m_LocalPosition: {x: 1.4, y: 1.072, z: -4.66}
   m_LocalScale: {x: 1, y: 0.18493, z: 2.629}
   m_Children: []
   m_Father: {fileID: 0}
@@ -482,7 +482,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 79a2528eb0e85bf4cad5e29b33edbf3f, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
