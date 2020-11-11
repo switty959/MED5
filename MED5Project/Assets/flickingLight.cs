@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class flickingLight : MonoBehaviour
 {
+    // sound soure http://freesoundeffect.net/sound/fluorescent-light-flicker-za01-288-sound-effect
     Light lightSource;
+    public AudioSource flickingLightSound;
     public float minWaitTime, maxWaitTime;
     void Start()
     {
@@ -21,6 +23,7 @@ public class flickingLight : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
             lightSource.enabled = !lightSource.enabled;
+            flickingLightSound.Play(0);
         }
     }
 }
