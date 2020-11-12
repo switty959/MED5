@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Packages.Rider.Editor.UnitTesting;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
@@ -10,14 +11,17 @@ public class vibrationScript : MonoBehaviour
     public Quaternion startRotation;
     public AudioClip vibrationSound;    
     public float speed, strength,intensity;
-    public int timer;
+    float timer;
     public bool vibrate;
+    int test = 0;
     //speed is how fast it should move and strength is the amount it shoud move
     // Start is called before the first frame update
     void Awake()
     {
         startPos = transform.position;
         startRotation = transform.rotation;
+        GetComponent<AudioSource>().clip = vibrationSound;
+        timer = GetComponent<AudioSource>().clip.length;
         
     }
 
@@ -28,18 +32,21 @@ public class vibrationScript : MonoBehaviour
         {
             StartCoroutine(vibration());
             
+            if (test == 0)
+            {
+                GetComponent<AudioSource>().PlayOneShot(vibrationSound);
+                test++;
+            }
+            
 
+            
         }
         
     }
 
     IEnumerator vibration()
     {
-        AudioSource audio = GetComponent<AudioSource>();
-        audio.clip = vibrationSound;
-        yield return new WaitForSeconds(audio.clip.length);
         
-        audio.Play();
         transform.rotation = new Quaternion(
             startRotation.x + Random.Range(-intensity, intensity) * intensity,
             startRotation.y + Random.Range(-intensity, intensity) * intensity,
@@ -55,6 +62,7 @@ public class vibrationScript : MonoBehaviour
         
         yield return new WaitForSeconds(timer);
         vibrate = false;
+        test=0;
 
 
     }
