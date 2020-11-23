@@ -623,6 +623,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 563.72833
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
     - target: {fileID: 919132149155446097, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
       propertyPath: m_Name
       value: DoorCompleteFBX (3)
@@ -2619,7 +2627,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1364703081}
+    m_TransformParent: {fileID: 1969309411}
     m_Modifications:
     - target: {fileID: 1161841497049354, guid: 78196c2946aba40bcb735ee1782fd7dc, type: 3}
       propertyPath: m_Name
@@ -2715,8 +2723,8 @@ Transform:
   - {fileID: 1272898274}
   - {fileID: 220897042}
   - {fileID: 757949040}
-  m_Father: {fileID: 1364703081}
-  m_RootOrder: 12
+  m_Father: {fileID: 1969309411}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &436900260
 PrefabInstance:
@@ -4849,7 +4857,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1364703081}
+    m_TransformParent: {fileID: 1969309411}
     m_Modifications:
     - target: {fileID: 1161841497049354, guid: 78196c2946aba40bcb735ee1782fd7dc, type: 3}
       propertyPath: m_Name
@@ -6236,7 +6244,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1364703081}
+    m_TransformParent: {fileID: 1969309411}
     m_Modifications:
     - target: {fileID: 1161841497049354, guid: 78196c2946aba40bcb735ee1782fd7dc, type: 3}
       propertyPath: m_Name
@@ -6371,7 +6379,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1364703081}
+    m_TransformParent: {fileID: 1969309411}
     m_Modifications:
     - target: {fileID: 1161841497049354, guid: 78196c2946aba40bcb735ee1782fd7dc, type: 3}
       propertyPath: m_Name
@@ -6437,7 +6445,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1364703081}
+    m_TransformParent: {fileID: 1969309411}
     m_Modifications:
     - target: {fileID: 1161841497049354, guid: 78196c2946aba40bcb735ee1782fd7dc, type: 3}
       propertyPath: m_Name
@@ -7371,6 +7379,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 563.72833
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
     - target: {fileID: 919132149155446097, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
       propertyPath: m_Name
       value: DoorCompleteFBX (5)
@@ -9010,6 +9026,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 563.72833
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
     - target: {fileID: 919132149155446097, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
       propertyPath: m_Name
       value: DoorCompleteFBX (2)
@@ -9770,20 +9794,11 @@ Transform:
   m_LocalPosition: {x: 6.3511667, y: 5.582236, z: -26.933697}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 716245522}
-  - {fileID: 981579371}
-  - {fileID: 2039798767}
-  - {fileID: 950262851}
-  - {fileID: 936598516}
-  - {fileID: 408006090}
-  - {fileID: 1618265167}
-  - {fileID: 1778327943}
   - {fileID: 1325907423}
   - {fileID: 1221723097}
   - {fileID: 1327020609}
   - {fileID: 922919431}
-  - {fileID: 422498495}
-  - {fileID: 1830689242}
+  - {fileID: 1969309411}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11119,7 +11134,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1364703081}
+    m_TransformParent: {fileID: 1969309411}
     m_Modifications:
     - target: {fileID: 1161841497049354, guid: 78196c2946aba40bcb735ee1782fd7dc, type: 3}
       propertyPath: m_Name
@@ -12352,7 +12367,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1364703081}
+    m_TransformParent: {fileID: 1969309411}
     m_Modifications:
     - target: {fileID: 1161841497049354, guid: 78196c2946aba40bcb735ee1782fd7dc, type: 3}
       propertyPath: m_Name
@@ -13015,8 +13030,8 @@ Transform:
   - {fileID: 525398457}
   - {fileID: 1261716041}
   - {fileID: 854650711}
-  m_Father: {fileID: 1364703081}
-  m_RootOrder: 13
+  m_Father: {fileID: 1969309411}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1833446355
 PrefabInstance:
@@ -13150,6 +13165,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 563.72833
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
     - target: {fileID: 919132149155446097, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
       propertyPath: m_Name
       value: DoorCompleteFBX (4)
@@ -13687,6 +13710,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caf97ab3e122d8e46835c6ae9c8385d9, type: 3}
+--- !u!1 &1969309410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969309411}
+  m_Layer: 0
+  m_Name: coridorHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1969309411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969309410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 716245522}
+  - {fileID: 981579371}
+  - {fileID: 2039798767}
+  - {fileID: 950262851}
+  - {fileID: 936598516}
+  - {fileID: 408006090}
+  - {fileID: 1618265167}
+  - {fileID: 1778327943}
+  - {fileID: 422498495}
+  - {fileID: 1830689242}
+  m_Father: {fileID: 1364703081}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1975350786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14359,7 +14422,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1364703081}
+    m_TransformParent: {fileID: 1969309411}
     m_Modifications:
     - target: {fileID: 1161841497049354, guid: 78196c2946aba40bcb735ee1782fd7dc, type: 3}
       propertyPath: m_Name
@@ -14555,7 +14618,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
       propertyPath: m_Materials.Array.data[4]
       value: 
-      objectReference: {fileID: -6797276902173345958, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18d2a47eadd7ebe419a9a8e6876bb4fd, type: 2}
     - target: {fileID: 919132149155446097, guid: d682b5c268c2160408fb71b21ab873f8, type: 3}
       propertyPath: m_Name
       value: DoorCompleteFBX
