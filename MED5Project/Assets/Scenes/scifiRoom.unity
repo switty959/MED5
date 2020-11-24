@@ -628,6 +628,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9f02f93ab1369414e9a5ccc793670333, type: 3}
   m_PrefabInstance: {fileID: 20828929}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &26223716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4282676516188180060, guid: c2668551db2fd9140a5af83452a91636, type: 3}
+  m_PrefabInstance: {fileID: 588799599}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &33780902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,6 +2424,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187314061}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &188227166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4282676516188180060, guid: c2668551db2fd9140a5af83452a91636, type: 3}
+  m_PrefabInstance: {fileID: 895223972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &196973324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bda625db98ce53c47b65b9505b9e609c, type: 3}
@@ -6046,6 +6056,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4647558082258428, guid: 73bb8072738d94b1b92f322b86fd7a6d, type: 3}
   m_PrefabInstance: {fileID: 441954471}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &446493763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4282676516188180060, guid: c2668551db2fd9140a5af83452a91636, type: 3}
+  m_PrefabInstance: {fileID: 630087697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &446500660
 GameObject:
   m_ObjectHideFlags: 0
@@ -7255,15 +7270,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorOpen: 0000000000
+  test: 0
   doors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 26223716}
+  - {fileID: 446493763}
+  - {fileID: 188227166}
+  - {fileID: 2073849931}
   doorlight:
   - {r: 0, g: 1, b: 0, a: 0}
   - {r: 1, g: 0, b: 0, a: 0}
+  doorSoundEffect: {fileID: 8300000, guid: 36c00874e5ce6b64d85fcafee6308a6f, type: 3}
 --- !u!4 &510475054
 Transform:
   m_ObjectHideFlags: 0
@@ -30465,6 +30481,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 991e0cf149ffeb4478b3edb24ef994e6, type: 3}
+--- !u!1 &2073849931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4282676516188180060, guid: c2668551db2fd9140a5af83452a91636, type: 3}
+  m_PrefabInstance: {fileID: 1052845588}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2073897508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4cf5250e3072f64d9338931e87ed092, type: 3}
