@@ -28,13 +28,6 @@ public class doorChecker : MonoBehaviour
                 doors[i].GetComponent<Renderer>().materials[4].color = doorlight[0];
                 doors[i].GetComponent<Animator>().SetBool("opening",true);
 
-                StartCoroutine(knockingOnDoor());
-
-                if (test == 0)
-                {
-                    GetComponent<AudioSource>().PlayOneShot(doorSoundEffect);
-                    test++;
-                }
 
 
             }
@@ -48,10 +41,4 @@ public class doorChecker : MonoBehaviour
         }   
     }
 
-    IEnumerator knockingOnDoor()
-    {
-    yield return new WaitForSeconds(doorSoundEffect.length);
-    test = 0;
-
-    }
 }
