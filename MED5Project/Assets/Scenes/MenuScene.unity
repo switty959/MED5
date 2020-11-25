@@ -250,10 +250,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397914915}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 100, y: 33, z: 0.1}
+  m_Size: {x: 100, y: 33, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &397914918
 MonoBehaviour:
@@ -479,10 +479,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751665201}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 100, y: 33, z: 0.1}
+  m_Size: {x: 100, y: 33, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &751665204
 MonoBehaviour:
@@ -874,10 +874,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707483373}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 100, y: 33, z: 0.1}
+  m_Size: {x: 100, y: 33, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1707483376
 MonoBehaviour:
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 32
   img: {fileID: 0}
   panel: {fileID: 1533526186}
   btn: {fileID: 0}
@@ -1441,7 +1441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010084917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7, y: -3.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
