@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Valve.VR;
 
 public class LineRenderSetting : MonoBehaviour
 {
     [SerializeField] LineRenderer rend;
     Vector3[] points;
 
+    
+
     public LayerMask layerMask;
-    public Image img;
     public GameObject panel;
     public Button btn;
-
+    
     private void Start()
     {
         rend = gameObject.GetComponent<LineRenderer>();
@@ -26,15 +28,18 @@ public class LineRenderSetting : MonoBehaviour
 
         rend.enabled = true;
 
-        img = panel.GetComponent<Image>();
 
     }
     private void Update()
     {
         AlignLineRenderer(rend);
-        if (AlignLineRenderer(rend)&& Input.GetAxis("Submit")>0)
+        if (AlignLineRenderer(rend) && Input.GetAxis("Submit")>0)
         {
             btn.onClick.Invoke();
+        }
+        if (Input.GetAxis("Submit") > 0)
+        {
+            Debug.Log("fuck you vive, hate your controller scheme");
         }
     }
 
@@ -73,17 +78,17 @@ public class LineRenderSetting : MonoBehaviour
         {
             if (btn.name == "red_btn")
             {
-                img.color = Color.red;
+                panel.GetComponent<MeshRenderer>().material.color = Color.red;
                 Debug.Log("RED");
             }
             else if (btn.name == "blue_btn")
             {
-                img.color = Color.blue;
+                panel.GetComponent<MeshRenderer>().material.color = Color.blue;
                 Debug.Log("BLUE");
             }
             else if (btn.name == "green_btn")
             {
-                img.color = Color.green;
+                panel.GetComponent<MeshRenderer>().material.color = Color.green;
                 Debug.Log("GREEN");
             }
         }
