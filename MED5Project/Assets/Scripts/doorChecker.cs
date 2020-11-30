@@ -37,6 +37,12 @@ public class doorChecker : MonoBehaviour
         {
             audioForObject[i].enabled = false;
         }
+
+        for (int i = 0; i < doors.Length; i++)
+        {
+            doors[i].GetComponent<Renderer>().materials[3].color = doorlight[1];
+            doors[i].GetComponent<Renderer>().materials[4].color = doorlight[1];
+        }
         lightForObject[0].SetActive(true);
         audioForObject[4].enabled = true;
     }
@@ -150,8 +156,17 @@ public class doorChecker : MonoBehaviour
             doors[3].GetComponent<Renderer>().materials[4].color = doorlight[0];
             doors[3].GetComponent<Animator>().SetBool("opening", true);
         }
-      
-        
+
+        if (doorOpen[3])
+        {
+            //disable sound and spotlight for eyescanner
+            audioForObject[2].enabled = false;
+            lightForObject[3].SetActive(false);
+
+
+        }
+
+
     }
 
 }
