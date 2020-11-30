@@ -3407,8 +3407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6060d921c86b9e4db3ef13d020ba2cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorOpen: 00000000
   testprep: 0
+  doorOpen: 00000000
   doors:
   - {fileID: 188227166}
   - {fileID: 2073849931}
