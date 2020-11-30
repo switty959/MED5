@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/testmenufuckyou.unity
+    guid: b71242b797ad54240af03f121af3c2ec
+  - enabled: 1
+    path: Assets/Scenes/scifiRoom.unity
+    guid: 9cac8e643ff87264ebf1251866406779
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 4e4e6d4a776e35e4582c1cf74ba16a5a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9474e3b2d76c1fb4b9639f2f1c569212, type: 2}

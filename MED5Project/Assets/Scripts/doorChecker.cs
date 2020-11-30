@@ -5,6 +5,7 @@ using UnityEngine;
 public class doorChecker : MonoBehaviour
 {
     public int testprep; // 0 = baseline , 1 = light only, 2 = sound only, 3 = sound + light
+    public string testObjectName;
     public bool[] doorOpen;
 
     public GameObject[] doors = new GameObject[4];
@@ -18,6 +19,10 @@ public class doorChecker : MonoBehaviour
 
     // door sound effect : https://www.youtube.com/watch?v=cXqDc6I1NP8
 
+    private void Awake()
+    {
+        testprep = GameObject.Find(testObjectName).GetComponent<twoXtwoTest>().test;
+    }
     void Start()
     {
         doorOpen = new bool[doors.Length];
