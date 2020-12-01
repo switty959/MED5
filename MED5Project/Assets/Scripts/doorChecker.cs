@@ -14,15 +14,13 @@ public class doorChecker : MonoBehaviour
     public GameObject[] lightForObject = new GameObject[4];
     public AudioSource[] audioForObject = new AudioSource[4];
 
-    public AudioClip doorSoundEffect;
+
     // Start is called before the first frame update
 
-    // door sound effect : https://www.youtube.com/watch?v=cXqDc6I1NP8
-
-   /* private void Awake()
+    private void Awake()
     {
         testprep = GameObject.Find(testObjectName).GetComponent<twoXtwoTest>().test;
-    }*/
+    }
     void Start()
     {
        
