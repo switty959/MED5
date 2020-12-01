@@ -11,6 +11,7 @@ public class LineRenderSetting : MonoBehaviour
 
 
     public SteamVR_Action_Boolean input;
+    private SteamVR_Input_Sources rightHand;
     public LayerMask layerMask;
     public GameObject panel;
     public Button btn;
@@ -32,8 +33,11 @@ public class LineRenderSetting : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log("right hand trigger value: " + SteamVR_Actions._default.InteractUI);
+
+
         AlignLineRenderer(rend);
-        if (AlignLineRenderer(rend) && input.GetStateDown(SteamVR_Input_Sources.Any))
+        if (AlignLineRenderer(rend))
         {
             btn.onClick.Invoke();
         }
