@@ -33,7 +33,7 @@ public class LineRenderSetting : MonoBehaviour
     private void Update()
     {
         AlignLineRenderer(rend);
-        if (AlignLineRenderer(rend) && Input.GetAxis("Submit")>0)
+        if (AlignLineRenderer(rend))
         {
             btn.onClick.Invoke();
         }

@@ -23,13 +23,6 @@ public class TrackingFromHeadset : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_selection != null)
-        {
-            Renderer selectionRenderer = _selection.GetComponent<Renderer>();
-            selectionRenderer.material.color = Color.grey;
-            _selection = null;
-        }
-
         Ray ray =  new Ray(main.transform.position,main.transform.forward);
         RaycastHit hit;
 
@@ -38,12 +31,13 @@ public class TrackingFromHeadset : MonoBehaviour
             Transform selection = hit.transform;
             if (selection.CompareTag(tagLookingFor))
             {
-                Renderer selectionRenderer = selection.GetComponent<Renderer>();
-                if (selectionRenderer != null)
+                for (int i = 0; i < interactiveObjects.Length; i++)
                 {
-                    selectionRenderer.material.color = Color.green;
+                    if (selection.name == interactiveObjects[i].name)
+                    {
+                        lookTimeForObject[i] += Time.deltaTime;
+                    }
                 }
-                _selection = selection;
             }
         }
         Debug.DrawRay(main.transform.position,main.transform.forward,Color.black,1);
