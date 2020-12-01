@@ -9,8 +9,8 @@ public class LineRenderSetting : MonoBehaviour
     [SerializeField] LineRenderer rend;
     Vector3[] points;
 
-    
 
+    public SteamVR_Action_Boolean input;
     public LayerMask layerMask;
     public GameObject panel;
     public Button btn;
@@ -33,13 +33,9 @@ public class LineRenderSetting : MonoBehaviour
     private void Update()
     {
         AlignLineRenderer(rend);
-        if (AlignLineRenderer(rend))
+        if (AlignLineRenderer(rend) && input.GetStateDown(SteamVR_Input_Sources.Any))
         {
             btn.onClick.Invoke();
-        }
-        if (Input.GetAxis("Submit") > 0)
-        {
-            Debug.Log("fuck you vive, hate your controller scheme");
         }
     }
 
