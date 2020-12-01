@@ -30,7 +30,7 @@ public class TrackingFromHeadset : MonoBehaviour
             _selection = null;
         }
 
-        Ray ray = main.ScreenPointToRay(main.transform.position);
+        Ray ray =  new Ray(main.transform.position,main.transform.forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray,out hit))
@@ -46,5 +46,6 @@ public class TrackingFromHeadset : MonoBehaviour
                 _selection = selection;
             }
         }
+        Debug.DrawRay(main.transform.position,main.transform.forward,Color.black,1);
     }
 }
