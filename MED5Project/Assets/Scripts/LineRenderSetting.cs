@@ -34,10 +34,7 @@ public class LineRenderSetting : MonoBehaviour
     private void Update()
     {
         //Debug.Log("Right hand trigger value: " + SteamVR_Actions._default.InteractUI.state);
-        if (input.state)
-        {
-            Debug.Log("triggered");
-        }
+        Debug.Log(input.state);
 
 
         AlignLineRenderer(rend);
