@@ -1249,6 +1249,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
+  input:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 32
@@ -1469,7 +1472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionSet:
-    actionSetPath: /actions/buggy
+    actionSetPath: /actions/default
   forSources: 2
   disableAllOtherActionSets: 0
   activateOnStart: 1
