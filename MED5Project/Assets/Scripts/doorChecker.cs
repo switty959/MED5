@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class doorChecker : MonoBehaviour
 {
@@ -11,10 +11,11 @@ public class doorChecker : MonoBehaviour
 
     public GameObject[] doors = new GameObject[4];
     public GameObject[] teleportplanes;
+    public GameObject[] interactiveObjectWithChangingMaterials = new GameObject[2];
     public Color[] doorlight = new Color[2];
     public GameObject[] lightForObject = new GameObject[4];
     public AudioSource[] audioForObject = new AudioSource[4];
-    public RawImage[] imagesForDigitalScreens = new RawImage[4];
+    public Material[] imagesForDigitalScreens = new Material[2];
 
 
     // Start is called before the first frame update
@@ -108,8 +109,7 @@ public class doorChecker : MonoBehaviour
 
             //disable sound and spotlight for laptop
             lightForObject[0].SetActive(false);
-            imagesForDigitalScreens[0].enabled = false;
-            imagesForDigitalScreens[1].enabled = true;
+            interactiveObjectWithChangingMaterials[0].GetComponent<Renderer>().material = imagesForDigitalScreens[0];
 
             //enable sound and light for dresser
 
@@ -161,8 +161,7 @@ public class doorChecker : MonoBehaviour
             //disable sound and spotlight for handscanner
 
             lightForObject[3].SetActive(false);
-            imagesForDigitalScreens[2].enabled = false;
-            imagesForDigitalScreens[3].enabled = true;
+            interactiveObjectWithChangingMaterials[1].GetComponent<Renderer>().material = imagesForDigitalScreens[1];
         }
        
 
