@@ -6,10 +6,12 @@ public class TrackingFromHeadset : MonoBehaviour
 {
     public Camera main;
     public string tagLookingFor;
+    public float totalTimeSpent;
     public float[] lookTimeForObject;
     public GameObject[] interactiveObjects;
 
     public Transform _selection;
+    
 
 
     private void Awake()
@@ -23,6 +25,7 @@ public class TrackingFromHeadset : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        totalTimeSpent += Time.deltaTime;
         Ray ray =  new Ray(main.transform.position,main.transform.forward);
         RaycastHit hit;
 
