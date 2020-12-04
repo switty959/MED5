@@ -20,10 +20,10 @@ public class doorChecker : MonoBehaviour
 
     // Start is called before the first frame update
 
-private void Awake()
+/*private void Awake()
   {
       testprep = GameObject.Find(testObjectName).GetComponent<twoXtwoTest>().test;
-  }
+  }*/
   void Start()
   {
 
