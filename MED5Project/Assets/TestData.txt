@@ -1,0 +1,22 @@
+DataSet from Test 
+
+------------------------------------------------
+Total time spent: 37,80623
+
+Time looked at Cube: 0
+Time looked at Cube (1): 0
+Time looked at Cube (2): 0
+Time looked at Cube (3): 0
+Time looked at Cube (4): 37,78694
+Time looked at Cube (5): 0
+Time looked at Cube (6): 0
+Time looked at Cube (7): 0
+
+interval time 0: 17,00149
+interval time 1: 2,206297
+interval time 2: 3,489044
+interval time 3: 1,279528
+interval time 4: 4,412434
+interval time 5: 1,718103
+interval time 6: 3,081039
+interval time 7: 4,599007
