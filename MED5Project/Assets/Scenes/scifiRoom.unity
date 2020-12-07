@@ -561,7 +561,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
+  booleanTrigger: {fileID: 0}
   doorId: 3
+  interactiveObjectNames:
+  - Laptop(interactive)
+  - DresserFBX(interactive)
+  - FaceScannerRight(interactive)
+  - FaceScannerLeft(interactive)
+  - HandScanner(interactive)
   audioForThis: {fileID: 74635578}
   audioForNext: {fileID: 936727615}
 --- !u!65 &74635580
@@ -3633,7 +3640,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
+  booleanTrigger: {fileID: 0}
   doorId: 2
+  interactiveObjectNames:
+  - Laptop(interactive)
+  - DresserFBX(interactive)
+  - FaceScannerRight(interactive)
+  - FaceScannerLeft(interactive)
+  - HandScanner(interactive)
   audioForThis: {fileID: 1440336617}
   audioForNext: {fileID: 74635578}
 --- !u!65 &510107506
@@ -5946,7 +5960,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
+  booleanTrigger: {fileID: 0}
   doorId: 0
+  interactiveObjectNames:
+  - Laptop(interactive)
+  - DresserFBX(interactive)
+  - FaceScannerRight(interactive)
+  - FaceScannerLeft(interactive)
+  - HandScanner(interactive)
   audioForThis: {fileID: 858642472}
   audioForNext: {fileID: 1694519194}
 --- !u!65 &858642474
@@ -6480,7 +6501,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
+  booleanTrigger: {fileID: 0}
   doorId: 2
+  interactiveObjectNames:
+  - Laptop(interactive)
+  - DresserFBX(interactive)
+  - FaceScannerRight(interactive)
+  - FaceScannerLeft(interactive)
+  - HandScanner(interactive)
   audioForThis: {fileID: 1440336617}
   audioForNext: {fileID: 74635578}
 --- !u!65 &922976214
@@ -11553,7 +11581,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
+  booleanTrigger: {fileID: 0}
   doorId: 1
+  interactiveObjectNames:
+  - Laptop(interactive)
+  - DresserFBX(interactive)
+  - FaceScannerRight(interactive)
+  - FaceScannerLeft(interactive)
+  - HandScanner(interactive)
   audioForThis: {fileID: 1694519194}
   audioForNext: {fileID: 1440336617}
 --- !u!1 &1693806455

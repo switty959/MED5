@@ -5,7 +5,9 @@ using UnityEngine;
 public class triggerScript : MonoBehaviour
 {
     public doorChecker openingDoor;
+    public TrackingFromHeadset booleanTrigger;
     public int doorId;
+    public string[] interactiveObjectNames;
     public AudioSource audioForThis,audioForNext;
 
 
@@ -35,10 +37,29 @@ public class triggerScript : MonoBehaviour
 
          }*/
 
-        if (other.CompareTag("rightHand"))
+        if (other.CompareTag("rightHand") || other.CompareTag("head"))
         {
             openingDoor.doorOpen[doorId] = true;
             audioForThis.mute = true;
+            if (gameObject.name == interactiveObjectNames[0])
+            {
+                booleanTrigger.triggersForIntervalTime[0] = true;
+            }
+            if (gameObject.name == interactiveObjectNames[1])
+            {
+                booleanTrigger.triggersForIntervalTime[1] = true;
+            }
+            if (gameObject.name == interactiveObjectNames[2] || gameObject.name == interactiveObjectNames[3])
+            {
+                booleanTrigger.triggersForIntervalTime[2] = true;
+                booleanTrigger.triggersForIntervalTime[3] = true;
+            }
+
+            if (gameObject.name == interactiveObjectNames[4])
+            {
+                booleanTrigger.triggersForIntervalTime[4] = true;
+            }
+
             if (audioForNext != null)
             {
                 audioForNext.mute = false;
