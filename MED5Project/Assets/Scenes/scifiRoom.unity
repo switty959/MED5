@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
-  booleanTrigger: {fileID: 0}
+  booleanTrigger: {fileID: 510475055}
   doorId: 3
   interactiveObjectNames:
   - Laptop(interactive)
@@ -3640,7 +3640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
-  booleanTrigger: {fileID: 0}
+  booleanTrigger: {fileID: 510475055}
   doorId: 2
   interactiveObjectNames:
   - Laptop(interactive)
@@ -3695,6 +3695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testprep: 3
   testObjectName: test id holder
+  noSound: 0
+  noLight: 0
   doorOpen: 00000000
   doors:
   - {fileID: 188227166}
@@ -3718,11 +3720,22 @@ MonoBehaviour:
   - {fileID: 2086868545}
   - {fileID: 282012531}
   - {fileID: 664620080}
+  - {fileID: 975679261}
+  - {fileID: 370566624}
+  - {fileID: 1582199804}
+  - {fileID: 783348663}
+  - {fileID: 1739649273}
+  - {fileID: 2129840961}
   audioForObject:
   - {fileID: 858642472}
   - {fileID: 74635578}
   - {fileID: 1440336617}
   - {fileID: 1694519194}
+  - {fileID: 588799600}
+  - {fileID: 630087699}
+  - {fileID: 895223974}
+  - {fileID: 1052845590}
+  - {fileID: 664620084}
   imagesForDigitalScreens:
   - {fileID: 2100000, guid: cb85dfdf2fc213541889538216ab47d8, type: 2}
   - {fileID: 2100000, guid: a4fe880e4e36dfc438918a967ceecc86, type: 2}
@@ -4274,6 +4287,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5218861219078687972, guid: c2668551db2fd9140a5af83452a91636, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c2668551db2fd9140a5af83452a91636, type: 3}
+--- !u!82 &588799600 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -7053409344245336901, guid: c2668551db2fd9140a5af83452a91636, type: 3}
+  m_PrefabInstance: {fileID: 588799599}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &607596257
 GameObject:
   m_ObjectHideFlags: 0
@@ -4532,6 +4550,11 @@ PrefabInstance:
 --- !u!4 &630087698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3469125440763696358, guid: c2668551db2fd9140a5af83452a91636, type: 3}
+  m_PrefabInstance: {fileID: 630087697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &630087699 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -7053409344245336901, guid: c2668551db2fd9140a5af83452a91636, type: 3}
   m_PrefabInstance: {fileID: 630087697}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &643595959 stripped
@@ -5960,7 +5983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
-  booleanTrigger: {fileID: 0}
+  booleanTrigger: {fileID: 510475055}
   doorId: 0
   interactiveObjectNames:
   - Laptop(interactive)
@@ -6386,6 +6409,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3469125440763696358, guid: c2668551db2fd9140a5af83452a91636, type: 3}
   m_PrefabInstance: {fileID: 895223972}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &895223974 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -7053409344245336901, guid: c2668551db2fd9140a5af83452a91636, type: 3}
+  m_PrefabInstance: {fileID: 895223972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &912821172
 GameObject:
   m_ObjectHideFlags: 0
@@ -6501,7 +6529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
-  booleanTrigger: {fileID: 0}
+  booleanTrigger: {fileID: 510475055}
   doorId: 2
   interactiveObjectNames:
   - Laptop(interactive)
@@ -7728,6 +7756,11 @@ PrefabInstance:
 --- !u!4 &1052845589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3469125440763696358, guid: c2668551db2fd9140a5af83452a91636, type: 3}
+  m_PrefabInstance: {fileID: 1052845588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1052845590 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -7053409344245336901, guid: c2668551db2fd9140a5af83452a91636, type: 3}
   m_PrefabInstance: {fileID: 1052845588}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1072401399
@@ -11581,7 +11614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDoor: {fileID: 510475053}
-  booleanTrigger: {fileID: 0}
+  booleanTrigger: {fileID: 510475055}
   doorId: 1
   interactiveObjectNames:
   - Laptop(interactive)

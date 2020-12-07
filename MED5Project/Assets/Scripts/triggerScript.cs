@@ -71,7 +71,7 @@ public class triggerScript : MonoBehaviour
         }
         if (other.CompareTag("rightHand") && openingDoor.doors[1])
         {
-            openingDoor.doors[0].GetComponent<AudioSource>().Play();
+            openingDoor.doors[1].GetComponent<AudioSource>().Play();
         }
         if (other.CompareTag("head") && openingDoor.doors[2])
         {

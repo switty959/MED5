@@ -7,6 +7,9 @@ public class doorChecker : MonoBehaviour
 {
     public int testprep; // 0 = baseline , 1 = light only, 2 = sound only, 3 = sound + light
     public string testObjectName;
+
+    public bool noSound, noLight = false;
+
     public bool[] doorOpen;
 
     public GameObject[] doors = new GameObject[4];
@@ -20,10 +23,10 @@ public class doorChecker : MonoBehaviour
 
     // Start is called before the first frame update
 
-/*private void Awake()
+private void Awake()
   {
       testprep = GameObject.Find(testObjectName).GetComponent<twoXtwoTest>().test;
-  }*/
+  }
   void Start()
   {
 
@@ -56,25 +59,16 @@ public class doorChecker : MonoBehaviour
 
       if (testprep == 0)
       {
-          for (int i = 0; i < lightForObject.Length; i++)
-          {
-              lightForObject[i].SetActive(false);
-              audioForObject[i].mute = true;
-          }
+            noSound = true;
+            noLight = true;
       }
       if (testprep == 1)
       {
-          for (int i = 0; i < lightForObject.Length; i++)
-          {
-              audioForObject[i].mute = true;
-          }
-      }
+            noSound = true;
+        }
       if (testprep == 2)
       {
-          for (int i = 0; i < lightForObject.Length; i++)
-          {
-              lightForObject[i].SetActive(false);
-          }
+            noLight = true;
       }
       for (int i = 0; i < audioForObject.Length; i++)
       {
@@ -89,7 +83,27 @@ public class doorChecker : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-
+        if (noSound)
+        {
+            for (int i = 0; i < audioForObject.Length; i++)
+            {
+                audioForObject[i].mute = true;
+            }
+        }
+        if (noLight)
+        {
+            for (int i = 0; i < lightForObject.Length; i++)
+            {
+                lightForObject[i].SetActive(false);
+            }
+        }
+        if (!noSound)
+        {
+            for (int i = 4; i < 7; i++)
+            {
+                audioForObject[i].mute = false;
+            }
+        }
 
 
       if (doorOpen[0])
@@ -107,13 +121,20 @@ public class doorChecker : MonoBehaviour
           doors[2].GetComponent<Renderer>().materials[4].color = doorlight[0];
           doors[2].GetComponent<Animator>().SetBool("opening", true);
 
-          //disable sound and spotlight for laptop
-          lightForObject[0].SetActive(false);
+            //disable sound and spotlight for laptop
+            if (!noLight)
+            {
+                lightForObject[0].SetActive(false);     
+            }
+          
           interactiveObjectWithChangingMaterials[0].GetComponent<MeshRenderer>().material = imagesForDigitalScreens[0];
 
-          //enable sound and light for dresser
-
-          lightForObject[1].SetActive(true);
+            //enable sound and light for dresser
+            if (!noLight)
+            {
+                lightForObject[1].SetActive(true);
+            }
+          
 
       }
       if (doorOpen[1])
@@ -126,28 +147,43 @@ public class doorChecker : MonoBehaviour
 
 
             //disable sound and light for dresser
-            lightForObject[1].GetComponent<Animator>().SetBool("triggered",true);
+            
 
 
-          //enable sound and spotlight for eyescanner
+            //enable sound and spotlight for eyescanner
+            if (!noLight)
+            {
+                lightForObject[2].SetActive(true);
+                lightForObject[1].GetComponent<Animator>().SetBool("triggered", true);
 
-          lightForObject[2].SetActive(true);
+                for (int i = 4; i < lightForObject.Length; i++)
+                {
+                    lightForObject[i].SetActive(true);
+                }
+            }
 
-      }
+        }
       if (doorOpen[2])
       {
 
-          GameObject.Find("Spotlight FaceScanner Right").GetComponent<Light>().color = doorlight[0];
-          GameObject.Find("Spotlight FaceScanner Left").GetComponent<Light>().color = doorlight[0];
 
 
-          //disable sound and spotlight for eyescanner
 
-          lightForObject[2].SetActive(false);
+            //disable sound and spotlight for eyescanner
+            if (!noLight)
+            {
+                lightForObject[2].SetActive(false);
+                lightForObject[3].SetActive(true);
+                for (int i = 4; i < lightForObject.Length; i++)
+                {
+                    lightForObject[i].GetComponent<Light>().color = Color.green;
+                }
+            }
+          
 
           //enable sound and light for hand scanner
 
-          lightForObject[3].SetActive(true);
+          
 
           teleportplanes[1].SetActive(true);
           doors[3].GetComponent<Renderer>().materials[3].color = doorlight[0];
@@ -157,9 +193,12 @@ public class doorChecker : MonoBehaviour
 
       if (doorOpen[3])
       {
-          //disable sound and spotlight for handscanner
-
-          lightForObject[3].SetActive(false);
+            //disable sound and spotlight for handscanner
+            if (!noLight)
+            {
+                lightForObject[3].SetActive(false);
+            }
+         
           interactiveObjectWithChangingMaterials[1].GetComponent<MeshRenderer>().material = imagesForDigitalScreens[1];
       }
 
