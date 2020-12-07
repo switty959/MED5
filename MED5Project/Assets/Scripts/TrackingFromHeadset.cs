@@ -45,7 +45,7 @@ public class TrackingFromHeadset : MonoBehaviour
             }            
         }
 
-        if (triggersForIntervalTime[7])
+        if (triggersForIntervalTime[interactiveObjects.Length-1])
         {
            writeFile();
         }

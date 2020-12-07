@@ -2933,6 +2933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FaceScannerRight(interactive)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288647aa3346cbe4f83960aab85477d7, type: 3}
+      propertyPath: m_TagString
+      value: interactiveObject
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 288647aa3346cbe4f83960aab85477d7, type: 3}
 --- !u!4 &401933977 stripped
@@ -3655,6 +3659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 510475054}
   - component: {fileID: 510475053}
+  - component: {fileID: 510475055}
   m_Layer: 0
   m_Name: GameMananger
   m_TagString: Untagged
@@ -3721,6 +3726,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &510475055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510475052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1f265a1c0a6844aad19a68eae9a193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 0}
+  tagLookingFor: interactiveObject
+  totalTimeSpent: 0
+  startTime: 0
+  lookTimeForObject: []
+  intervalTimer: []
+  triggersForIntervalTime: 
+  interactiveObjects:
+  - {fileID: 858642471}
+  - {fileID: 74635575}
+  - {fileID: 922976212}
+  - {fileID: 510107504}
+  - {fileID: 1692869636}
+  _selection: {fileID: 0}
 --- !u!4 &515914985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1a1f17f76719e914bb284c62df5cc6bb, type: 3}
@@ -5790,6 +5821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laptop(interactive)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c4cf5250e3072f64d9338931e87ed092, type: 3}
+      propertyPath: m_TagString
+      value: interactiveObject
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4cf5250e3072f64d9338931e87ed092, type: 3}
 --- !u!4 &858642470 stripped
@@ -7741,6 +7776,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 288647aa3346cbe4f83960aab85477d7, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288647aa3346cbe4f83960aab85477d7, type: 3}
+      propertyPath: m_TagString
+      value: interactiveObject
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 288647aa3346cbe4f83960aab85477d7, type: 3}
@@ -14218,6 +14257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HandScanner(interactive)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9450c18c5455c648b9b0c919f39b7ec, type: 3}
+      propertyPath: m_TagString
+      value: interactiveObject
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9450c18c5455c648b9b0c919f39b7ec, type: 3}
 --- !u!4 &2028670596 stripped
@@ -14528,7 +14571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101586796}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: assestsHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16180,6 +16223,10 @@ PrefabInstance:
     - target: {fileID: 7068161063564699981, guid: 40ddbacaf5d51784a96a7b9611e02d68, type: 3}
       propertyPath: m_Name
       value: DresserFBX(interactive)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068161063564699981, guid: 40ddbacaf5d51784a96a7b9611e02d68, type: 3}
+      propertyPath: m_TagString
+      value: interactiveObject
       objectReference: {fileID: 0}
     - target: {fileID: 7592215360080525693, guid: 40ddbacaf5d51784a96a7b9611e02d68, type: 3}
       propertyPath: m_LocalPosition.x

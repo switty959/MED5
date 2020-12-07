@@ -37,7 +37,25 @@ public class triggerScript : MonoBehaviour
 
         if (other.CompareTag("rightHand"))
         {
-            Debug.Log("dis is the right hand meme");
+            openingDoor.doorOpen[doorId] = true;
+            audioForThis.mute = true;
+            if (audioForNext != null)
+            {
+                audioForNext.mute = false;
+            }
+        }
+        if (other.CompareTag("rightHand") && openingDoor.doors[0])
+        {
+            openingDoor.doors[0].GetComponent<AudioSource>().Play();
+        }
+        if (other.CompareTag("rightHand") && openingDoor.doors[1])
+        {
+            openingDoor.doors[0].GetComponent<AudioSource>().Play();
+        }
+        if (other.CompareTag("head") && openingDoor.doors[2])
+        {
+            openingDoor.doors[2].GetComponent<AudioSource>().Play();
+
         }
     }
 }
