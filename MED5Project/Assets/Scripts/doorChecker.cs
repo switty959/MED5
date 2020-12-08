@@ -19,11 +19,12 @@ public class doorChecker : MonoBehaviour
     public GameObject[] lightForObject = new GameObject[4];
     public AudioSource[] audioForObject = new AudioSource[4];
     public Material[] imagesForDigitalScreens = new Material[2];
+    public Animator dresserAnimator;
 
 
     // Start is called before the first frame update
 
-private void Awake()
+    private void Awake()
   {
       testprep = GameObject.Find(testObjectName).GetComponent<twoXtwoTest>().test;
   }
@@ -144,6 +145,7 @@ private void Awake()
           doors[1].GetComponent<Renderer>().materials[3].color = doorlight[0];
           doors[1].GetComponent<Renderer>().materials[4].color = doorlight[0];
           doors[1].GetComponent<Animator>().SetBool("opening", true);
+            dresserAnimator.SetBool("opening",true);
 
 
             //disable sound and light for dresser

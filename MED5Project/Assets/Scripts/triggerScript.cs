@@ -11,6 +11,7 @@ public class triggerScript : MonoBehaviour
     public AudioSource audioForThis,audioForNext;
 
 
+
     private void OnTriggerEnter(Collider other)
     {
         /*if (other.tag == "Player")
@@ -36,11 +37,44 @@ public class triggerScript : MonoBehaviour
              }
 
          }*/
+        if (other.CompareTag("rightHand") && gameObject.name == interactiveObjectNames[0])
+        {
+            openingDoor.doorOpen[doorId] = true;
+            audioForThis.mute = true;
+            openingDoor.doors[0].GetComponent<AudioSource>().Play();
+            booleanTrigger.triggersForIntervalTime[0] = true;
+        }
+        if (other.CompareTag("rightHand") && gameObject.name == interactiveObjectNames[1])
+        {
+            openingDoor.doorOpen[doorId] = true;
+            audioForThis.mute = true;
+            openingDoor.doors[1].GetComponent<AudioSource>().Play();
+            booleanTrigger.triggersForIntervalTime[1] = true;
+            
+        }
+        if (other.CompareTag("head") && gameObject.name == interactiveObjectNames[2])
+        {
+            openingDoor.doorOpen[doorId] = true;
+            audioForThis.mute = true;
+            openingDoor.doors[2].GetComponent<AudioSource>().Play();
+            booleanTrigger.triggersForIntervalTime[2] = true;
+        }
+        if (other.CompareTag("rightHand") && gameObject.name == interactiveObjectNames[3])
+        {
+            openingDoor.doorOpen[doorId] = true;
+            audioForThis.mute = true;
+            openingDoor.doors[3].GetComponent<AudioSource>().Play();
+            booleanTrigger.triggersForIntervalTime[3] = true;
+        }
 
+
+
+        /*
         if (other.CompareTag("rightHand") || other.CompareTag("head"))
         {
             openingDoor.doorOpen[doorId] = true;
             audioForThis.mute = true;
+
             if (gameObject.name == interactiveObjectNames[0])
             {
                 booleanTrigger.triggersForIntervalTime[0] = true;
@@ -77,6 +111,6 @@ public class triggerScript : MonoBehaviour
         {
             openingDoor.doors[2].GetComponent<AudioSource>().Play();
 
-        }
+        }*/
     }
 }
