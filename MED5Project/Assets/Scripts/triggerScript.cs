@@ -11,60 +11,53 @@ public class triggerScript : MonoBehaviour
     public AudioSource audioForThis,audioForNext;
 
 
-
     private void OnTriggerEnter(Collider other)
     {
-        /*if (other.tag == "Player")
-         {
-             openingDoor.doorOpen[doorId] = true;
-             audioForThis.mute = true;
-             if (audioForNext != null)
-             {
-                 audioForNext.mute = false;
-             }
-             if (doorId ==0 && other.tag == "rightHand")
-             {
-                 openingDoor.doors[0].GetComponent<AudioSource>().Play();
-             }
-             if (doorId == 1 && other.tag == "rightHand")
-             {
-                 openingDoor.doors[1].GetComponent<AudioSource>().Play();
-             }
+        
 
-             if (doorId == 2 && other.tag == "head")
-             {
-                 openingDoor.doors[3].GetComponent<AudioSource>().Play();
-             }
-
-         }*/
-        if (other.CompareTag("rightHand") && gameObject.name == interactiveObjectNames[0])
+        if (audioForNext != null)
         {
-            openingDoor.doorOpen[doorId] = true;
-            audioForThis.mute = true;
-            openingDoor.doors[0].GetComponent<AudioSource>().Play();
-            booleanTrigger.triggersForIntervalTime[0] = true;
+            audioForNext.mute = false;
         }
-        if (other.CompareTag("rightHand") && gameObject.name == interactiveObjectNames[1])
+
+        if (other.CompareTag("rightHand") && gameObject.name == interactiveObjectNames[0] && !openingDoor.doorOpen[doorId])
         {
             openingDoor.doorOpen[doorId] = true;
             audioForThis.mute = true;
+            audioForNext.mute = false;
+            openingDoor.doors[0].GetComponent<AudioSource>().Play();
+            openingDoor.doors[2].GetComponent<AudioSource>().Play();
+            booleanTrigger.triggersForIntervalTime[0] = true;
+            Debug.Log(other.tag.ToString());
+        }
+        if (other.CompareTag("rightHand") && gameObject.name == interactiveObjectNames[1] && !openingDoor.doorOpen[doorId])
+        {
+            openingDoor.doorOpen[doorId] = true;
+            audioForThis.mute = true;
+            audioForNext.mute = false;
             openingDoor.doors[1].GetComponent<AudioSource>().Play();
             booleanTrigger.triggersForIntervalTime[1] = true;
-            
+            Debug.Log(other.tag.ToString());
+
         }
-        if (other.CompareTag("head") && gameObject.name == interactiveObjectNames[2])
+        if (other.CompareTag("head") && gameObject.name == interactiveObjectNames[2] && !openingDoor.doorOpen[doorId] || other.CompareTag("head") && gameObject.name == interactiveObjectNames[3] && !openingDoor.doorOpen[doorId])
         {
             openingDoor.doorOpen[doorId] = true;
             audioForThis.mute = true;
-            openingDoor.doors[2].GetComponent<AudioSource>().Play();
-            booleanTrigger.triggersForIntervalTime[2] = true;
-        }
-        if (other.CompareTag("rightHand") && gameObject.name == interactiveObjectNames[3])
-        {
-            openingDoor.doorOpen[doorId] = true;
-            audioForThis.mute = true;
+            audioForNext.mute = false;
             openingDoor.doors[3].GetComponent<AudioSource>().Play();
+            booleanTrigger.triggersForIntervalTime[2] = true;
             booleanTrigger.triggersForIntervalTime[3] = true;
+            GameObject.Find("note(Office)").SetActive(true);
+            Debug.Log(other.tag.ToString());
+        }
+        if (other.CompareTag("rightHand") && gameObject.name == interactiveObjectNames[4] && !openingDoor.doorOpen[doorId])
+        {
+            openingDoor.doorOpen[doorId] = true;
+            audioForThis.mute = true;
+            audioForNext.mute = false;
+            booleanTrigger.triggersForIntervalTime[4] = true;
+            Debug.Log(other.tag.ToString());
         }
 
 
@@ -94,10 +87,7 @@ public class triggerScript : MonoBehaviour
                 booleanTrigger.triggersForIntervalTime[4] = true;
             }
 
-            if (audioForNext != null)
-            {
-                audioForNext.mute = false;
-            }
+           
         }
         if (other.CompareTag("rightHand") && openingDoor.doors[0])
         {

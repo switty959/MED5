@@ -100,7 +100,7 @@ public class doorChecker : MonoBehaviour
         }
         if (!noSound)
         {
-            for (int i = 4; i < 7; i++)
+            for (int i = 4; i < audioForObject.Length; i++)
             {
                 audioForObject[i].mute = false;
             }
