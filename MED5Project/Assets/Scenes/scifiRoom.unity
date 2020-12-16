@@ -3865,7 +3865,6 @@ MonoBehaviour:
   main: {fileID: 0}
   tagLookingFor: interactiveObject
   totalTimeSpent: 0
-  startTime: 0
   lookTimeForObject: []
   intervalTimer: []
   triggersForIntervalTime: 
@@ -3875,6 +3874,7 @@ MonoBehaviour:
   - {fileID: 922976212}
   - {fileID: 510107504}
   - {fileID: 1692869636}
+  endScene: {fileID: 1017988346}
   _selection: {fileID: 0}
 --- !u!4 &515914985 stripped
 Transform:
@@ -7691,7 +7691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1017988347
 RectTransform:
   m_ObjectHideFlags: 0

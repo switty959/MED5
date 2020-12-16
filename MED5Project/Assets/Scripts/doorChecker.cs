@@ -147,12 +147,6 @@ public class doorChecker : MonoBehaviour
           doors[1].GetComponent<Animator>().SetBool("opening", true);
             dresserAnimator.SetBool("opening",true);
 
-
-            //disable sound and light for dresser
-            
-
-
-            //enable sound and spotlight for eyescanner
             if (!noLight)
             {
                 lightForObject[2].SetActive(true);
