@@ -14,6 +14,9 @@ public class flickingLight : MonoBehaviour
         StartCoroutine(flickering());
     }
    
+
+
+
    IEnumerator flickering()
     {
         while(true)
