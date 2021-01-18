@@ -1,5 +1,33 @@
-DataSet from usability Test 
+DataSet from Test 
 
+------------------------------------------------
+Total time spent: 242.6696
+
+Time looked at Laptop(interactive): 3.273463
+Time looked at HandScanner(interactive): 3.229121
+Time looked at FaceScannerLeft(interactive): 0.2472084
+Time looked at FaceScannerRight(interactive): 7.841155
+Time looked at DresserFBX(interactive): 4.988306
+
+interval time 0: 71.06032
+interval time 1: 83.42265
+interval time 2: 39.42023
+interval time 3: 0
+interval time 4: 48.74843
+------------------------------------------------
+Total time spent: 90.13077
+
+Time looked at Laptop(interactive): 0
+Time looked at HandScanner(interactive): 0.389395
+Time looked at FaceScannerLeft(interactive): 1.129646
+Time looked at FaceScannerRight(interactive): 0.1906286
+Time looked at DresserFBX(interactive): 2.700675
+
+interval time 0: 9.778653
+interval time 1: 45.9985
+interval time 2: 20.3485
+interval time 3: 0
+interval time 4: 13.98141
 ------------------------------------------------
 Total time spent: 480.4306
 
@@ -71,6 +99,20 @@ interval time 2: 96.00285
 interval time 3: 0
 interval time 4: 164.2176
 ------------------------------------------------
+Total time spent: 279.205
+
+Time looked at Laptop(interactive): 7.537665
+Time looked at HandScanner(interactive): 1.328067
+Time looked at FaceScannerLeft(interactive): 2.503912
+Time looked at FaceScannerRight(interactive): 1.339963
+Time looked at DresserFBX(interactive): 6.805279
+
+interval time 0: 12.55846
+interval time 1: 144.0124
+interval time 2: 86.24284
+interval time 3: 0
+interval time 4: 36.37868
+------------------------------------------------
 Total time spent: 428.3387
 
 Time looked at Laptop(interactive): 6.502795
@@ -112,6 +154,104 @@ interval time 1: 95.74704
 interval time 2: 93.99232
 interval time 3: 0
 interval time 4: 62.83707
+------------------------------------------------
+Total time spent: 152.8398
+
+Time looked at Laptop(interactive): 4.305201
+Time looked at HandScanner(interactive): 0.0107371
+Time looked at FaceScannerLeft(interactive): 16.82839
+Time looked at FaceScannerRight(interactive): 4.869868
+Time looked at DresserFBX(interactive): 0.7944744
+
+interval time 0: 11.41276
+interval time 1: 29.83323
+interval time 2: 93.58711
+interval time 3: 0
+interval time 4: 17.99548
+------------------------------------------------
+Total time spent: 180.3135
+
+Time looked at Laptop(interactive): 2.6037
+Time looked at HandScanner(interactive): 0.9171159
+Time looked at FaceScannerLeft(interactive): 0.3854344
+Time looked at FaceScannerRight(interactive): 3.988132
+Time looked at DresserFBX(interactive): 5.205954
+
+interval time 0: 34.09063
+interval time 1: 46.59929
+interval time 2: 76.03382
+interval time 3: 0
+interval time 4: 23.57843
+------------------------------------------------
+Total time spent: 96.65805
+
+Time looked at Laptop(interactive): 1.010244
+Time looked at HandScanner(interactive): 0
+Time looked at FaceScannerLeft(interactive): 0.2891882
+Time looked at FaceScannerRight(interactive): 0
+Time looked at DresserFBX(interactive): 2.663795
+
+interval time 0: 22.5996
+interval time 1: 33.89031
+interval time 2: 18.56376
+interval time 3: 0
+interval time 4: 21.59447
+------------------------------------------------
+Total time spent: 51.68914
+
+Time looked at Laptop(interactive): 0
+Time looked at HandScanner(interactive): 0
+Time looked at FaceScannerLeft(interactive): 2.589116
+Time looked at FaceScannerRight(interactive): 0.0783068
+Time looked at DresserFBX(interactive): 0.0234411
+
+interval time 0: 13.52138
+interval time 1: 13.06894
+interval time 2: 15.23687
+interval time 3: 0
+interval time 4: 9.814514
+------------------------------------------------
+Total time spent: 63.67154
+
+Time looked at Laptop(interactive): 0
+Time looked at HandScanner(interactive): 0
+Time looked at FaceScannerLeft(interactive): 0.1098113
+Time looked at FaceScannerRight(interactive): 0
+Time looked at DresserFBX(interactive): 1.831828
+
+interval time 0: 8.134253
+interval time 1: 14.47555
+interval time 2: 30.56336
+interval time 3: 0
+interval time 4: 10.48769
+------------------------------------------------
+Total time spent: 51.39029
+
+Time looked at Laptop(interactive): 0
+Time looked at HandScanner(interactive): 0.0749647
+Time looked at FaceScannerLeft(interactive): 0
+Time looked at FaceScannerRight(interactive): 0
+Time looked at DresserFBX(interactive): 0.7597269
+
+interval time 0: 10.88798
+interval time 1: 14.57502
+interval time 2: 12.51082
+interval time 3: 0
+interval time 4: 13.40544
+------------------------------------------------
+Total time spent: 52.95573
+
+Time looked at Laptop(interactive): 0.2461478
+Time looked at HandScanner(interactive): 0
+Time looked at FaceScannerLeft(interactive): 0.5673634
+Time looked at FaceScannerRight(interactive): 0
+Time looked at DresserFBX(interactive): 2.841035
+
+interval time 0: 14.07967
+interval time 1: 16.25256
+interval time 2: 11.41839
+interval time 3: 0
+interval time 4: 11.19353
 ------------------------------------------------
 Total time spent: 438.8651
 
