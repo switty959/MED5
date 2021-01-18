@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 using System.IO;
 
 public class TrackingFromHeadset : MonoBehaviour
@@ -9,11 +9,11 @@ public class TrackingFromHeadset : MonoBehaviour
     public Camera main;
     public string tagLookingFor;
     public float totalTimeSpent;
-    public float startTime;
     public float[] lookTimeForObject;
     public float[] intervalTimer;
     public bool[] triggersForIntervalTime;
     public GameObject[] interactiveObjects;
+    public GameObject endScene;
     int textCounter;
 
     public Transform _selection;
@@ -28,10 +28,6 @@ public class TrackingFromHeadset : MonoBehaviour
         main = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
-    private void Start()
-    {
-        startTime = Time.time;
-    }
     // Update is called once per frame
     void Update()
     {
@@ -47,7 +43,8 @@ public class TrackingFromHeadset : MonoBehaviour
 
         if (triggersForIntervalTime[interactiveObjects.Length-1])
         {
-           writeFile();
+           
+           StartCoroutine(writeFile());
         }
 
 
@@ -71,7 +68,7 @@ public class TrackingFromHeadset : MonoBehaviour
        
     }
 
-    void writeFile()
+    IEnumerator writeFile()
     {
         string path = Application.dataPath + "/TestData.txt";
         if (!File.Exists(path))
@@ -100,9 +97,11 @@ public class TrackingFromHeadset : MonoBehaviour
             }
             
         }
-
-        EditorApplication.isPlaying = false;
-        Application.Quit();
+        yield return new WaitForSeconds(5);
+        Time.timeScale = 0;
+        endScene.SetActive(true);
+        //EditorApplication.isPlaying = false;
+        //Application.Quit();
         
         
     }
